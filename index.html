@@ -220,21 +220,20 @@
         </div>
     </div>
 
-
-
-    <table>
-        <tr class="table">
-            <th>Size</th>
-            <th>Toppings</th>
-            <th>Crust</th>
-        </tr>
-    </table>
-    </div>
-    </div>
-    <h3>Bookings</h3>
-
+    <h3>Bookings</h3><br>
+    <div class="row">
+            <div class="col-md-4">
     <form action="">
-        Toopings:<br>
+                Size:<br>
+                <input list="size" name="size">
+                <datalist id="size">
+                    <option value="Small">
+                    <option value="Medium">
+                    <option value="Large">
+                </datalist><br>
+        </div>
+        <div class="col-md-4">
+        Toppings:<br>
         <input list="toppings" name="topping">
         <datalist id="toppings">
             <option value="Mushroom">
@@ -243,17 +242,20 @@
             <option value="Pepperoni">
             <option value="Bacon">
         </datalist><br>
-        Crusts:<br>
-        <input list="Crusts" name="Crust">
-        <datalist id="Crusts">
-            <option value="Thin Crust">
-            <option value="Thick Crust">
-            <option value="Deep Crust">
-            <option value="Cheese Filled Crust">
-            <option value="Stuffed Crust">
-        </datalist>
-
-        </div>
+    </div>
+    <div class="col-md-4">
+    Crusts:<br>
+    <input list="Crusts" name="Crust">
+    <datalist id="Crusts">
+        <option value="Thin Crust">
+        <option value="Thick Crust">
+        <option value="Deep Crust">
+        <option value="Cheese Filled Crust">
+        <option value="Stuffed Crust">
+    </datalist>
+</form>
+</div>
+    </div>
 </body>
 
 </html>
