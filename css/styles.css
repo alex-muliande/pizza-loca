@@ -21,6 +21,18 @@ body{
 h1{
     padding-top:250px;
 }
+h2{
+    color: aqua;
+    font-size: 10%;
+    font-family: 'Courgette', cursive;
+}
+.pink{
+   color: palevioletred;
+}
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
 
 
 
