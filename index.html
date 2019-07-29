@@ -204,7 +204,7 @@
         </div>
     </div>
 
-    <h3>Bookings</h3><br>
+    <h3>Place an Order</h3><br>
     <div class="row">
         <div class="col-md-4">
             <form action="">
@@ -217,39 +217,33 @@
                 </datalist><br>
         </div>
 
-
-        <label for="pizzaSize">Choose the size:</label>
-        <select class="form-control" id="pizzaSize" onchange="getSizeValue();">
-            <option value="0">&nbsp;</option>
-            <option value="400">Small -- Ksh. 400</option>
-            <option value="700">Medium -- Ksh. 700</option>
-            <option value="900">Large -- Ksh. 900</option>
-        </select>
-
         <div class="col-md-4">
             Toppings:<br>
             <input list="toppings" name="topping">
             <datalist id="toppings">
-                <option value="Mushroom">
-                <option value="Sausage">
-                <option value="Green Pepper">
-                <option value="Pepperoni">
-                <option value="Bacon">
+                <option value="200">Mushroom --ksh.200</option>
+                <option value="200">Sausage --ksh.200</option>
+                <option value="250">Green Pepper --ksh.250</option>
+                <option value="300">Pepperoni --ksh.300</option>
+                <option value="350">Bacon --ksh.350</option>
             </datalist><br>
         </div>
         <div class="col-md-4">
             Crusts:<br>
             <input list="Crusts" name="Crust">
             <datalist id="Crusts">
-                <option value="Thin Crust">
-                <option value="Thick Crust">
-                <option value="Deep Crust">
-                <option value="Cheese Filled Crust">
-                <option value="Stuffed Crust">
+                <option value="250">Thin Crust</option>
+                <option value="350">Thick Crust</option>
+                <option value="450">Deep Crust</option>
+                <option value="450">Cheese Filled Crust</option>
+                <option value="400">Stuffed Crust</option>
             </datalist>
-            </form>
         </div>
-    </div><br><br>
+        </div>
+        <br>
+            <button type="checkout" class="btn btn-outline-success" id="button">Checkout</button>
+            </form>
+    <br><br>
     <div class="c">
         <h3>Contact us</h3>
 
