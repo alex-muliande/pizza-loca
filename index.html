@@ -9,7 +9,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,8 +17,8 @@
 
 
 <body>
-    <!-- <div class="container"> -->
     <div class="container-fluid">
+    <!-- <div class="container-fluid"> -->
         <div class="a">
             <h2>Welcome to Pizza loca</h2>
             <h1>Eat good,Feel good,Look<br> Good.</h1>
@@ -154,7 +153,7 @@
     <h3>Place an Order</h3><br>
     <div class="row">
         <div class="col-md-3">
-            <form action="">
+            <form action="" id="form2">
                     
                 Quantity:<br>
                 <select id="quantity">
@@ -178,17 +177,18 @@
             </select>
         </div>
         <div class="col-md-3">
-            Toppings:<br>
-            <input type="checkbox" id="mush" value="200">Mushroom.<br>
-            <input type="checkbox" id="Green" value="250">Green paper.<br>
-            <input type="checkbox" id=sauce value="300">Sausage.<br>
-            <input type="checkbox" id="pep" value="350">Pepperoni<br>
-
+                Toppings:<br>
+            <select id="toppings" >
+            <option value="checkbox" id="mush" value="200">Mushroom.<br>
+            <option value="checkbox" id="Green" value="250">Green paper.<br>
+            <option value="checkbox" id=sauce value="300">Sausage.<br>
+            <option value="checkbox" id="pep" value="350">Pepperoni<br>
+        </select>
             <br>
         </div>
         <div class="col-md-3">
             Crusts:<br>
-            <select id="Crusts" name="Crust">
+            <select id="crusts" id="Crust">
 
                 <option value="250">Thin Crust--250</option>
                 <option value="350">Thick Crust--350</option>
@@ -205,8 +205,8 @@
         <div class="col-md-5"></div>
         <div class="col-md-4">
             Delivery:<br>
-            <input type="radio" name="status" value="200" checked> Yes<br>
-            <input type="radio" name="status" value="0"> No<br>
+            <option value="radio" name="status" value="200" checked> Yes<br>
+            <option value="radio" name="status" value="0"> No<br>
 
             <div class="addre">
                 <p class="address">stubborn alex....</p>
@@ -227,9 +227,9 @@
         <form id="jambo" name="form2" onsubmit="return contact()">
             <div class="row">
                 <div class="col-md-6">
-                    <input type="text" id="transparent" class="form-control" placeholder="Name" name="name"></div>
+                    <option value="text" id="transparent" class="form-control" placeholder="Name" name="name"></div>
                 <div class="col-md-6">
-                    <input type="text" id="transparent" class="form-control" placeholder="Email" name="email"><br>
+                    <option value="text" id="transparent" class="form-control" placeholder="Email" name="email"><br>
                 </div>
             </div>
             <div class="form-group" id="jambo"><br>
@@ -239,7 +239,8 @@
             </div>
         </form>
     </div>
-    <!-- </div> -->
+    </div>
+
 </body>
 
 </html>
