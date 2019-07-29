@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,15 +49,9 @@
                             <h4 class="card-title"><a>Hawaiian</a></h4>
 
                             <p class="card-text">A good Pizza offered with any toppings and crust of ones will.</p>
-
-                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
-
                         </div>
-
                     </div>
-
                 </div>
-
                 <div class="col-md-3">
                     <div class="card">
 
@@ -70,8 +64,6 @@
                             <h4 class="card-title"><a>Regina</a></h4>
 
                             <p class="card-text">Regina Pizaa offered at a negotiable price and Discounts offered.</p>
-
-                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                         </div>
 
@@ -90,102 +82,55 @@
 
                             <p class="card-text">Chiken Mushroom offered at a negotiable price and Discounts offered.
                             </p>
-
-                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
-
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-
-
                         <img class="card-img-top" src="../IP4/img/food-3227303_1280.jpg" alt="Card image cap">
-
-
                         <div class="card-body">
 
 
                             <h4 class="card-title"><a>Chiken Bba</a></h4>
 
                             <p class="card-text">Regina Pizaa offered at a good price and Discounts offered.</p>
-
-                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
-
                         </div>
-
                     </div>
                 </div><br><br><br>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
-
-
                             <img class="card-img-top" src="../IP4/img/D1062_42_624_1200.jpg" alt="Card image cap">
-
-
                             <div class="card-body">
-
-
                                 <h4 class="card-title"><a>Peri Peri Chiken</a></h4>
-
                                 <p class="card-text">Peri Peri Chiken offered at a negotiable price and Discounts
                                     offered.</p>
-
-                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
-
                             </div>
-
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="card">
-
-
                             <img class="card-img-top" src="../IP4/img/3BM0KDFE4B4285CC77BC34lv.jpg"
                                 alt="Card image cap">
-
-
                             <div class="card-body">
-
                                 <h4 class="card-title"><a>Veg Feast</a></h4>
-
                                 <p class="card-text">Veg Feast offered at a good price and Discounts offered.</p>
-
-                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
-
                             </div>
-
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="card">
-
-
                             <img class="card-img-top" src="../IP4/img/pizza-924023_1280.jpg" alt="Card image cap">
-
-
                             <div class="card-body">
-
-
                                 <h4 class="card-title"><a>Chiken Tikka</a></h4>
-
                                 <p class="card-text">Chiken Tikka offered at a good price and Discounts offered.</p>
-
-                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
-
+   
                             </div>
-
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="card">
-
-
                             <img class="card-img-top" src="https://pbs.twimg.com/media/Cpg9RqfWgAASDBJ.jpg"
                                 alt="Card image cap">
 
@@ -197,8 +142,6 @@
 
                                 <p class="card-text">Bbq Steak offered at a good price price and Discounts offered
                                     served with any salad.</p>
-
-                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
                             </div>
                         </div>
                     </div>
@@ -212,56 +155,65 @@
     <div class="row">
         <div class="col-md-3">
             <form action="">
+                    
                 Quantity:<br>
-                <input list="quantity" name="Quantity">
-                <datalist id="quantity">
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                </datalist> <br>
-            </div>
-            <div class="col-md-3">
-                Size:<br>
-                <input list="size" name="size">
-                <datalist id="size">
-                    <option value="600">Small --ksh.600</option>
-                    <option value="900">Medium --ksh.900</option>
-                    <option value="1200">Large" --ksh1200</option>
-                </datalist><br>
+                <select id="quantity">
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+
         </div>
-       
+        <div class="col-md-3">
+            Size:<br>
+            <select name="" id="size" onchange="size();">
+                <option value="600">Small --ksh.600</option>
+                <option value="900">Medium --ksh.900</option>
+                <option value="1200">Large" --ksh1200</option>
+            </select>
+        </div>
         <div class="col-md-3">
             Toppings:<br>
-            <input list="toppings" name="topping">
-            <datalist id="toppings">
-                <option value="200">Mushroom --ksh.200</option>
-                <option value="200">Sausage --ksh.200</option>
-                <option value="250">Green Pepper --ksh.250</option>
-                <option value="300">Pepperoni --ksh.300</option>
-                <option value="350">Bacon --ksh.350</option>
-            </datalist><br>
+            <input type="checkbox" id="mush" value="200">Mushroom.<br>
+            <input type="checkbox" id="Green" value="250">Green paper.<br>
+            <input type="checkbox" id=sauce value="300">Sausage.<br>
+            <input type="checkbox" id="pep" value="350">Pepperoni<br>
+
+            <br>
         </div>
         <div class="col-md-3">
             Crusts:<br>
-            <input list="Crusts" name="Crust">
-            <datalist id="Crusts">
-                <option value="250">Thin Crust</option>
-                <option value="350">Thick Crust</option>
-                <option value="450">Deep Crust</option>
-                <option value="450">Cheese Filled Crust</option>
-                <option value="400">Stuffed Crust</option>
-            </datalist>
+            <select id="Crusts" name="Crust">
+
+                <option value="250">Thin Crust--250</option>
+                <option value="350">Thick Crust--350</option>
+                <option value="450">Deep Crust--450</option>
+                <option value="450">Cheese Filled Crust--450</option>
+                <option value="400">Stuffed Crust--400</option>
+            </select>
         </div>
     </div>
+    <p id="appear"></p>
     <br><br>
     <div class="row">
-        
+
         <div class="col-md-5"></div>
-    <div class="col-md-4">
-        Delivery:<br>
-        <input type="radio" name="status" value="yes"> Yes<br>
-        <input type="radio" name="status" value="no"> No<br>
-    </div>
+        <div class="col-md-4">
+            Delivery:<br>
+            <input type="radio" name="status" value="200" checked> Yes<br>
+            <input type="radio" name="status" value="0"> No<br>
+
+            <div class="addre">
+                <p class="address">stubborn alex....</p>
+
+            </div>
+        </div>
+
     </div>
 
     <br>
