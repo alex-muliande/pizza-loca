@@ -12,7 +12,7 @@ The file is made most precisely with HTML and CSS making it easy to be viewed in
 >>>Be able to alert the user that their request has been received and show them the price to be paid.
 
 ## Known bugs 
-I have encountered a bug with the API which is not working but is something that I am working on.
+I have encountered a bug with the application crushing at some point ,but I am currently working on it.
 
 ## Tech used 
 >_HTML_
