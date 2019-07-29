@@ -51,7 +51,7 @@
                             
                             <p class="card-text">A good Pizza offered with any toppings and crust of ones will.</p>
  
-                            <a href="#" class="btn btn-primary">Place an Order</a>
+                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                         </div>
 
@@ -72,7 +72,7 @@
                          
                             <p class="card-text">Regina Pizaa offered at a negotiable price and Discounts offered.</p>
                       
-                            <a href="#" class="btn btn-primary">Place an Order</a>
+                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                         </div>
 
@@ -91,7 +91,7 @@
                          
                             <p class="card-text">Chiken Mushroom offered at a negotiable price and Discounts offered.</p>
                    
-                            <a href="#" class="btn btn-primary">Place an Order</a>
+                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                         </div>
 
@@ -111,7 +111,7 @@
                 
                             <p class="card-text">Regina Pizaa offered at a good price and Discounts offered.</p>
                     
-                            <a href="#" class="btn btn-primary">Place an Order</a>
+                            <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                         </div>
 
@@ -132,7 +132,7 @@
                            
                                 <p class="card-text">Peri Peri Chiken offered at a negotiable price and Discounts offered.</p>
                              
-                                <a href="#" class="btn btn-primary">Place an Order</a>
+                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                             </div>
 
@@ -152,7 +152,7 @@
                        
                                 <p class="card-text">Veg Feast offered at a good price and Discounts offered.</p>
                                 
-                                <a href="#" class="btn btn-primary">Place an Order</a>
+                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                             </div>
 
@@ -173,7 +173,7 @@
 
                                 <p class="card-text">Chiken Tikka offered at a good price and Discounts offered.</p>
 
-                                <a href="#" class="btn btn-primary">Place an Order</a>
+                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
 
                             </div>
 
@@ -193,8 +193,8 @@
                                 <h4 class="card-title"><a>Bbq Steak</a></h4>
 
                                 <p class="card-text">Bbq Steak offered at a good price price and Discounts offered served with any salad.</p>
-
-                                <a href="#" class="btn btn-primary">Place an Order</a>
+            
+                                <a href="#" class="btn btn-outline-primary">Place an Order</a>
                             </div>
                         </div>
                     </div>
@@ -211,11 +211,21 @@
                 Size:<br>
                 <input list="size" name="size">
                 <datalist id="size">
-                    <option value="Small">
-                    <option value="Medium">
-                    <option value="Large">
+                    <option value="600">Small   --ksh.600</option>
+                    <option value="900">Medium --ksh.900</option>
+                    <option value="1200">Large" --ksh1200</option>
                 </datalist><br>
         </div>
+
+
+        <label for="pizzaSize">Choose the size:</label>
+        <select class="form-control" id="pizzaSize" onchange="getSizeValue();">
+            <option value="0">&nbsp;</option>
+            <option value="400">Small -- Ksh. 400</option>
+            <option value="700">Medium -- Ksh. 700</option>
+            <option value="900">Large -- Ksh. 900</option>
+        </select>
+
         <div class="col-md-4">
             Toppings:<br>
             <input list="toppings" name="topping">
@@ -244,12 +254,12 @@
         <h3>Contact us</h3>
 
       
-                <form id="jambo" name="form2">
+                <form id="jambo" name="form2" class="md-form">
                         <div class="row">
                             <div class="col-md-6">
-                            <input type="text" id="transparent" placeholder="Name" name="name"></div>
+                            <input type="text" id="transparent" class="form-control" placeholder="Name" name="name"></div>
                             <div class="col-md-6">
-                            <input type="text" id="transparent" placeholder="Email" name="email">
+                            <input type="text" id="transparent" class="form-control" placeholder="Email" name="email"><br>
                         </div>
                     </div>
                     <div class="form-group" id="jambo"><br>
