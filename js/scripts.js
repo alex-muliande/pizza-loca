@@ -46,11 +46,15 @@ $(document).ready(function(){
     document.getElementById('form2').reset();
 
   });
-
-
 });
 
-
+function contact(form){
+         var name = document.forms["form2"]["name"].value;
+         var email2 = document.forms["form2"]["email"].value;
+         var message2 = document.forms["form2"]["message"].value;
+         alert("Hello! " + name + "," + " We have received your message. ");
+            };
+  
 
 
 
