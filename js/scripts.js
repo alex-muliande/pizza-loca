@@ -26,9 +26,9 @@ $(document).ready(function(){
 
     var selectedDeliver = parseInt($('#delivery-option').val());
     var deliverPrices = [200, 0]
-    var sizePrices = [1200, 900, 600];
+    var sizePrices = [600, 900, 1200];
     var inputtedType = $('#type').val();
-    var inputtedCrust = $('#crust').val();
+    var inputtedCrust = $('#crusts').val();
     var inputtedTopping = $('#toppings').val();
     var inputtedSize = parseInt($('#size').val());
     var pizzaPrice = sizePrices[inputtedSize-1];
@@ -43,18 +43,90 @@ $(document).ready(function(){
     alert("your order is " + newDetails.selectedType + ", " + newDetails.selectedToppings + ', and ' + newDetails.selectedCrust +". click ok to view your bill");
     alert(newBill +"");
 
-    document.getElementById('myOrder').reset();
+    document.getElementById('form2').reset();
 
   });
 
 
 });
-function contact(form){
-  var name = document.forms["form2"]["name"].value;
-      var email = document.forms["form2"]["email"].value;
-      var message = document.forms["form2"]["message"].value;
-      alert("Hello! " + name + "," + " We have received your message. ");
-        };
+
+
+
+
+
+
+
+
+
+
+// //business logic
+// // function Details( size, crust, toppings, quantity){
+// //   this.selectedSize = size;
+// //   this.selectedCrust = crust;
+// //   this.selectedToppings = toppings;
+// //   this.selectedQuantity = quantity;
+// // }
+
+// // function Total(price, quantity, delivery){
+// //   this.price = price;
+// //   this.quantity = quantity;
+// //   this.delivery = delivery;
+// // }
+
+// // Total.prototype.finalTotal = function(){
+// //   return this.price * this.quantity + this.delivery;
+// // }
+
+// var totalPrice = function(){
+//   return (inputtedSize + inputtedTopping + inputtedCrust * quantity) + deliveryPrice
+// };
+
+//   //ui logic
+// $(document).ready(function(){
+//   $('#form2').submit(function(event){
+//     event.preventDefault();
+
+//     // var selectedDeliver = parseInt($('#delivery-option').val());
+//     // var deliverPrices = [200, 0]
+//     // var Price = [1200, 900, 600];
+//     // var toppings =[200,250,300,350];
+//     // var crust=[250,350,450,450,400]
+//     var inputtedCrust = $('#crusts').find(":selected").val();
+//     var inputtedTopping = $('#toppings').find(":selected").val();
+//     var inputtedSize = $('#size').find(":selected").val();
+//     // var pizzaPrice = sizePrices[inputtedSize];
+//     var inputtedQuantity = parseInt($('#quantity').val());
+//     var deliveryPrice =$('#delivery-option').find(":selected").val();
+
+//     var { newDetails, newBill } = newFunction(inputtedSize, inputtedCrust, inputtedTopping, inputtedQuantity, deliveryPrice);
+
+//     var result = totalPrice();
+//     alert(result);
+
+//     alert("your order is "  + ", " + newDetails.selectedToppings + ', and ' + newDetails.selectedCrust +". click ok to view your bill");
+//     alert(newBill +"");
+
+//     document.getElementById('form2').reset();
+
+//   });
+
+
+// });
+
+
+// function newFunction(inputtedSize, inputtedCrust, inputtedTopping, inputtedQuantity, deliveryPrice) {
+//   var newDetails = new Details(inputtedType, inputtedSize, inputtedCrust, inputtedTopping, inputtedQuantity);
+//   var newTotal = new Total(pizzaPrice, inputtedQuantity, deliveryPrice);
+//   var newBill = newTotal.finalTotal();
+//   return { newDetails, newBill };
+// }
+
+// function contact(form){
+//       var name = document.forms["form2"]["name"].value;
+//       var email2 = document.forms["form2"]["email"].value;
+//       var message2 = document.forms["form2"]["message"].value;
+//       alert("Hello! " + name + "," + " We have received your message. ");
+//         };
 
 
 

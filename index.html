@@ -18,7 +18,7 @@
 
 <body>
     <div class="container-fluid">
-        <!-- <div class="container-fluid"> -->
+        <div class="container-fluid">
         <div class="a">
             <h2>Welcome to Pizza loca</h2>
             <h1>Eat good,Feel good,Look<br> Good.</h1>
@@ -149,11 +149,22 @@
             </div>
         </div>
     </div>
-
+<div class="d">
     <h3>Place an Order</h3><br>
     <div class="row">
         <div class="col-md-3">
-            <form action="" id="form2">
+            <form action="" id="form2" action="index.html">
+                    Type:<br>
+                    <select class="form-control" id="type">
+                            <option value="0">Select Type of pizza</option>
+                            <option value="Hawaiiana">Hawaiian</option>
+                            <option value="Regina">Regina</option>
+                            <option value="Chiken Mushroom">Chiken Mushroom</option>
+                            <option value="Chiken Bba">Chiken Bba</option>
+                            <option value="Peri Peri Chiken">Peri Peri Chiken</option>
+                            <option value="Veg Feast<">Veg Feast</option>
+                            <option value="Chiken Tikka<">Chiken Tikka</option>
+                        </select>
 
                 Quantity:<br>
                 <select id="quantity">
@@ -170,35 +181,34 @@
         </div>
         <div class="col-md-3">
             Size:<br>
-            <select name="" id="size" onchange="size();">
-                <option value="600">Small --ksh.600</option>
-                <option value="900">Medium --ksh.900</option>
-                <option value="1200">Large" --ksh1200</option>
+            <select id="size">
+                <option value="1">Small --ksh.600</option>
+                <option value="2">Medium --ksh.900</option>
+                <option value="3">Large" --ksh1200</option>
             </select>
         </div>
         <div class="col-md-3">
             Toppings:<br>
             <select id="toppings">
-                <option value="checkbox" id="mush" value="200">Mushroom.<br>
-                <option value="checkbox" id="Green" value="250">Green paper.<br>
-                <option value="checkbox" id=sauce value="300">Sausage.<br>
-                <option value="checkbox" id="pep" value="350">Pepperoni<br>
+                <option id="mush" value="Mushroom">Mushroom</option>.<br>
+                <option id="Green" value="Green pepper">Green pepper.<br>
+                <option  id=sauce value="Sausage">Sausage.<br>
+                <option  id="pep" value="Pepperoni">Pepperoni<br>
             </select>
             <br>
         </div>
         <div class="col-md-3">
             Crusts:<br>
-            <select id="crusts" id="Crust">
+            <select id="crusts">
 
-                <option value="250">Thin Crust--250</option>
-                <option value="350">Thick Crust--350</option>
-                <option value="450">Deep Crust--450</option>
-                <option value="450">Cheese Filled Crust--450</option>
-                <option value="400">Stuffed Crust--400</option>
+                <option value="Thin crust">Thin Crust--250</option>
+                <option value="Thick Crust">Thick Crust--350</option>
+                <option value="Deep Crust">Deep Crust--450</option>
+                <option value="Cheese Filled Crust">Cheese Filled Crust--450</option>
+                <option value="Stuffed Crust">Stuffed Crust--400</option>
             </select>
         </div>
     </div>
-    <p id="appear"></p>
     <br><br>
     <div class="row">
 
@@ -206,8 +216,8 @@
         <div class="col-md-4">
             Delivery:<br>
             <select id="delivery-option">
-                <option value="200" value="200">Delivery</option>
-                <option value="0" value="0">No Delivery</option>
+                <option value="1" >Delivery</option>
+                <option value="2" >No Delivery</option>
             </select>
         </div>
     </div>
@@ -215,7 +225,7 @@
     </div>
 
     <br>
-    <button type="checkout" class="btn btn-outline-success" id="button">Checkout</button>
+    <button type="submit" class="btn btn-outline-success" id="button" onclick="return totalPrice();">Checkout</button>
     </form>
     <br><br>
     <div class="c">
@@ -225,10 +235,10 @@
         <form id="jambo" name="form2" onsubmit="return contact()">
             <div class="row">
                 <div class="col-md-6">
-                    <option value="text" id="transparent" class="form-control" placeholder="Name" name="name">
+                    <input type="text" value="" id="transparent" class="form-control" placeholder="Name" name="name">
                 </div>
                 <div class="col-md-6">
-                    <option value="text" id="transparent" class="form-control" placeholder="Email" name="email"><br>
+                    <input type="email" value="" id="transparent" class="form-control" placeholder="Email" name="email"><br>
                 </div>
             </div>
             <div class="form-group" id="jambo"><br>
@@ -238,7 +248,7 @@
             </div>
         </form>
     </div>
-    </div>
+</div>
 
 </body>
 
