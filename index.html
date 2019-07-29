@@ -18,7 +18,7 @@
 
 <body>
     <div class="container-fluid">
-    <!-- <div class="container-fluid"> -->
+        <!-- <div class="container-fluid"> -->
         <div class="a">
             <h2>Welcome to Pizza loca</h2>
             <h1>Eat good,Feel good,Look<br> Good.</h1>
@@ -124,7 +124,7 @@
                             <div class="card-body">
                                 <h4 class="card-title"><a>Chiken Tikka</a></h4>
                                 <p class="card-text">Chiken Tikka offered at a good price and Discounts offered.</p>
-   
+
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
     <div class="row">
         <div class="col-md-3">
             <form action="" id="form2">
-                    
+
                 Quantity:<br>
                 <select id="quantity">
 
@@ -177,13 +177,13 @@
             </select>
         </div>
         <div class="col-md-3">
-                Toppings:<br>
-            <select id="toppings" >
-            <option value="checkbox" id="mush" value="200">Mushroom.<br>
-            <option value="checkbox" id="Green" value="250">Green paper.<br>
-            <option value="checkbox" id=sauce value="300">Sausage.<br>
-            <option value="checkbox" id="pep" value="350">Pepperoni<br>
-        </select>
+            Toppings:<br>
+            <select id="toppings">
+                <option value="checkbox" id="mush" value="200">Mushroom.<br>
+                <option value="checkbox" id="Green" value="250">Green paper.<br>
+                <option value="checkbox" id=sauce value="300">Sausage.<br>
+                <option value="checkbox" id="pep" value="350">Pepperoni<br>
+            </select>
             <br>
         </div>
         <div class="col-md-3">
@@ -205,14 +205,12 @@
         <div class="col-md-5"></div>
         <div class="col-md-4">
             Delivery:<br>
-            <option value="radio" name="status" value="200" checked> Yes<br>
-            <option value="radio" name="status" value="0"> No<br>
-
-            <div class="addre">
-                <p class="address">stubborn alex....</p>
-
-            </div>
+            <select id="delivery-option">
+                <option value="200" value="200">Delivery</option>
+                <option value="0" value="0">No Delivery</option>
+            </select>
         </div>
+    </div>
 
     </div>
 
@@ -227,7 +225,8 @@
         <form id="jambo" name="form2" onsubmit="return contact()">
             <div class="row">
                 <div class="col-md-6">
-                    <option value="text" id="transparent" class="form-control" placeholder="Name" name="name"></div>
+                    <option value="text" id="transparent" class="form-control" placeholder="Name" name="name">
+                </div>
                 <div class="col-md-6">
                     <option value="text" id="transparent" class="form-control" placeholder="Email" name="email"><br>
                 </div>

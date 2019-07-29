@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     var selectedDeliver = parseInt($('#delivery-option').val());
     var deliverPrices = [200, 0]
-    var sizePrices = [600, 900, 1200];
+    var sizePrices = [1200, 900, 600];
     var inputtedType = $('#type').val();
     var inputtedCrust = $('#crust').val();
     var inputtedTopping = $('#toppings').val();
@@ -49,6 +49,31 @@ $(document).ready(function(){
 
 
 });
+function contact(form){
+  var name = document.forms["form2"]["name"].value;
+      var email = document.forms["form2"]["email"].value;
+      var message = document.forms["form2"]["message"].value;
+      alert("Hello! " + name + "," + " We have received your message. ");
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
